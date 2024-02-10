@@ -1,0 +1,93 @@
+.center-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+}
+
+.page-holder {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.0)), url("/images/sunflowerbg.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+#image-holder {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.scale-out {
+    animation: scaleout 2000ms ease-in-out forwards;
+}
+
+.scale-in {
+    animation: scalein 2000ms ease-in-out forwards;
+}
+
+@keyframes scaleout {
+    to {
+        transform: scale(1.4);
+        -webkit-transform: scale(1.4);
+        -moz-transform: scale(1.4);
+        -ms-transform: scale(1.4);
+        -o-transform: scale(1.4);
+        transform: scale(1.4);
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+    }
+
+}
+
+@keyframes scalein {
+    from {
+        transform: scale(1.4);
+        -webkit-transform: scale(1.4);
+        -moz-transform: scale(1.4);
+        -ms-transform: scale(1.4);
+        -o-transform: scale(1.4);
+        transform: scale(1.4);
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+    }
+
+    to {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+    }
+
+}
+
+.image-original-size {
+    transform-origin: center;
+    animation: scaleback 2000ms ease-in-out forwards
+}
+
+@media only screen and (max-width: 600px) {
+    .page-holder {
+        background-position: center;
+        background-image: url("/images/mobile/sunflowerbg.jpeg");
+    }
+
+    #image-holder {
+        max-width: 210px;
+    }
+}

@@ -1,0 +1,21 @@
+
+.btn {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: .75rem 2.5rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-weight: bold;
+    font-family: description;
+    font-size: 1.2rem;
+    outline: none;
+}
+
+.btn-beginner {
+    background-color: #EDAC14;
+}
+
+#savethedate {
+    margin-top: 35px;
+    margin-bottom: 0px;
+}

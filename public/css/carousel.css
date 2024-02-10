@@ -1,0 +1,15 @@
+ .car-btn {
+     width: 0.90rem;
+     height: 0.90rem;
+     border-radius: 1rem;
+     border: none;
+     background-color: rgba(0, 0, 0, 0.30);
+     cursor: pointer;
+     margin: 0 0.1rem;
+     transition: width 0.3s;
+     outline: none;
+ }
+
+ .expand {
+     width: 1.75rem;
+ }

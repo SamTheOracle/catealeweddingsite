@@ -1,0 +1,56 @@
+.text-main-color {
+    color: #592F1F;
+}
+
+.center {
+    text-align: center;
+}
+
+.title {
+    font-size: 4rem;
+    font-family: alecatefont;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    font-family: subtitle;
+    margin: 0;
+}
+
+.description {
+    font-size: 1.6rem;
+    font-family: description;
+    margin: 0;
+}
+
+.party-place {
+    font-size: 3.5rem;
+    font-family: partyplace;
+    margin: 0;
+}
+
+.address {
+    font-size: 1.2rem;
+    font-family: description;
+}
+
+@font-face {
+    font-family: partyplace;
+    src: url("/fonts/Alex_Brush/AlexBrush-Regular.ttf");
+}
+
+@font-face {
+    font-family: alecatefont;
+    src: url("/fonts/Allura/Allura-Regular.ttf");
+}
+
+@font-face {
+    font-family: subtitle;
+    src: url("/fonts/Montserrat/static/Montserrat-Light.ttf");
+}
+
+@font-face {
+    font-family: description;
+    src: url("/fonts/Montserrat/static/Montserrat-Bold.ttf");
+}
